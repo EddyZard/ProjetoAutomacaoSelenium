@@ -17,6 +17,8 @@ public class TestaSite {
         txtUrl.sendKeys("Teste com Selenium");
 
         // Pegando o componente(botão) que está com o contexto Start Testing
-        WebElement botao = driver.findElement(By.xpath("//button[text()='Start Testing']"));
+        WebElement botao = driver.findElement(By.cssSelector("input[value='Start Testing']"));
+        Thread.sleep(1000);
+        botao.click();
     }
 }
