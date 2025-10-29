@@ -31,7 +31,9 @@ public class TestaSite2 {
         txtbusca.sendKeys("Curso de Java");
         txtbusca.sendKeys(Keys.ENTER);
 
-
+        Thread.sleep(2000);
+        //fechando o navegador
+        driver.quit();
 
     }
 }
